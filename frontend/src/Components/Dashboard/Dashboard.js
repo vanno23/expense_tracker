@@ -105,6 +105,11 @@ const DashboardStyled = styled.div`
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
         margin-top: 2rem;
+        h2 {
+          @media (max-width: 1750px) {
+            font-size: 1.3rem;
+          }
+        }
         .income,
         .expense {
           grid-column: span 2;
@@ -119,6 +124,10 @@ const DashboardStyled = styled.div`
           padding: 1rem;
           p {
             font-size: 3.5rem;
+
+            @media (max-width: 1750px) {
+              font-size: 1.2rem;
+            }
             font-weight: 700;
           }
         }
@@ -133,6 +142,9 @@ const DashboardStyled = styled.div`
             color: var(--color-green);
             opacity: 0.6;
             font-size: 4.5rem;
+            @media (max-width: 1750px) {
+              font-size: 1.5rem;
+            }
           }
         }
       }

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import axios from "axios";
-const BASE_URL = "http://localhost:5000/api/v1/";
+const BASE_URL = "https://expense-tracker-asmj.onrender.com/api/v1/";
 
 const GlobalContext = React.createContext();
 
@@ -61,7 +61,7 @@ export const GlobalProvider = ({ children }) => {
   const totalExpenses = () => {
     let totalIncome = 0;
     expenses.forEach((income) => {
-      totalIncome += income.amount;
+      totalIncome = totalIncome + income.amount;
     });
 
     return totalIncome;
